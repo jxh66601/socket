@@ -8,7 +8,7 @@ def main():
     # 1创建套接字
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     # 2.绑定一个本地信息
-    localaddr = ("172.16.163.135",31500) # 必须绑定自己电脑IP和port
+    localaddr = ("",31500) # 必须绑定自己电脑IP和port
     udp_socket.bind(localaddr)
     # 3.接收数据
     while True:
